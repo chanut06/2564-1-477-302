@@ -12,21 +12,75 @@
     <title>ทบทวน HTML / 477-302 (1/64)</title>
 </head>
 <body>
-    <h1>Test title h1</h1>
+    <h1 name="title-h2" id="title-h1">Test title h1</h1>
     <h2 name="title-h2" id="title-h1">Test title h2</h2>
+    <h3>Test title h3</h3>
+    <h4>Test title h4</h4>
 
     <!-- link -->
     <a href="https://www.fms.psu.ac.th" target="_blank">คณะวิทยาการจัดการ</a>
     <!-- blank ใส่เผื่อหน้าเว็บไม่โหลด -->
 
-    <!-- image -->
-    <ing src="ระบุsourceของรูป.jpg" alt="หากรูปไม่โหลดตรงนี้จะแสดงว่าอะไร เช่น my picture">
-    <!-- text formatting -->
-    <b><i><u>คณะวิทยาการจัดการ</u></i></b>
+    <!-- image ระบุsourceของรูป-->
+    <img src="image/my brain.jpg" alt="หากรูปไม่โหลดตรงนี้จะแสดงว่าอะไร เช่น my picture">
     
+    <br>
+    <!--text formatting-->
+    <br><u><i>คณะวิทยาการจัดการ</i></u>
+    <br>
     <strong>มหาวิทยาลัยสงขลานครินทร์</strong>
+    <br>
+    คณะวิทยาการจัดการ<sub>ม.อ.</sub>
+    <br>คณะวิทยาการจัดการ<sup>ม.อ.</sup>
+
+    <!-- list -->
+    <ol type="i">ประเภทของสินค้า
+        <li>เสื้อผ้า</li>
+        <li>เครื่องสำอางค์</li>
+        <li>เฟอร์นิเจอร์</li>
+        <li>คอมพิวเตอร์</li>
+    </ol>
+    <br>
+    <ul type="circle">ประเภทของสินค้า
+        <li>เสื้อผ้า</li>
+        <li>เครื่องสำอางค์</li>
+        <li>เฟอร์นิเจอร์</li>
+        <li>คอมพิวเตอร์</li>
+    </ul>
+
+    <!-- block & inline elements -->
+    <div>มหาวิทยาลัยสงขลานครินทร์</div>
+    <div>มหาวิทยาลัยสงขลานครินทร์</div>
+    <span>มหาวิทยาลัยสงขลานครินทร์</span>
+    <span>คณะวิทยาการจัดการ</span>
+    <br>
+
+    <!--table  -->
+    <table border="1">
+        <tr>
+            <td>#</td>
+            <td>รหัสสินค้า</td>
+            <td>ชื่อสินค้า</td>
+            <td>รายละเอียด</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>PD001</td>
+            <td>โต๊ะทานข้าว</td>
+            <td>โต๊ะทานข้าว 4 ที่นั่ง</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>PD002</td>
+            <td>โซฟา</td>
+            <td>โซฟาไม้สัก</td>
+        </tr>
+    </table>
+    
 </body>
+    
+    
 
 
-</body>
+
 </html>
