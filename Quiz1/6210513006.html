@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz1</title>
     <style>
-        body { color:#259adfc2; font-family: 'Maitree', serif;
-    font-size: 16px; }
-    
+        body { color:#2022bdc2; font-family: 'Maitree', serif;font-size: 16px; text-align:center;}
+        div {text-align:center; }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +16,24 @@
 </head>
 
 <body>
-    <h1>สั่งจองสินค้าพรีออเดอร์</h1>
+    <h2><u>สั่งจองสินค้าพรีออเดอร์ anua heartleaf 77%</u></h2>
     <br>
-    <h3>ข้อมูลสินค้า</h3>
-    <img src="PD001.jpg" alt="toner" image=:center;>
-    <img src="PD002.jpg" alt="serum" image=:center;>
-    
-    <table border="1">
+    <h4><i>ข้อมูลสินค้า</i></h4> 
+    <img src="PD001.jpg" align="center" alt="toner" height="200" width="240" >
+    <ul type="circle">
+        <li>โทนเนอร์</li></ul>
+    <img src="PD002.jpg" align="center"alt="serum" height="200" width="240">
+    <ul type="circle">
+        <li>เซรั่ม</li></ul>
+    <img src="PD003.jpg" align="center"alt="serum" height="200" width="240">
+    <ul type="circle">
+        <li>มาส์กโคลน</li></ul>
+    <img src="PD004.jpg" align="center"alt="pad" height="200" width="240">
+    <ul type="circle">
+        <li>แผ่นสำลี</li></ul>
+    <div class="title" style="color:#000000; font-size: 18px;">ตารางรหัสสินค้า 
+            <center><table border="1">
+        
         <tr>
             <td>#</td>
             <td>รหัสสินค้า</td>
@@ -42,19 +52,42 @@
             <td>เซรั่ม</td>
             <td>750 บาท</td>
         </tr>
-    </table>
+        <tr>
+            <td>3</td>
+            <td>PD003</td>
+            <td>มาส์กโคลน</td>
+            <td>490 บาท</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>PD004</td>
+            <td>แผ่นสำลี</td>
+            <td>590 บาท</td>
+        </tr>
+    </table></center>
+    </div>    
+    
+   
+    <br>
+    <h3>ทำการสั่งซื้อ</h3>
+    <select name="type">สินค้า
+        <option value="1">โทนเนอร์</option>
+        <option value="2">เซรั่ม</option>
+        <option value="3">มาส์กโคลน</option>
+        <option value="4">แผ่นสำลี</option>
+    </select> <b>จำนวนสินค้า <input type="number" id="number"></b><br>
     <br>
     <form>
-        <label for="user-name">ชื่อผู้ใช้งาน</label>
+        <label for="user-name">ชื่อผู้สั่งซื้อ</label> <br>
         <input type="text" name="user-name" id="user-name">
-        <br>
+<br>
         <h5>ที่อยู่สำหรับจัดส่ง</h5>
-        <textarea id="desc" rows="5"></textarea>
+        <textarea id="text" rows="5"></textarea>
         <br>
-        <input type="submit" value="เข้าสู่ระบบ">
+        <input type="submit" value="บันทึก">
         <input type="reset" value="ยกเลิก">
     </form>
-
+    <a href="https://www.konvy.com/list/?title=anua">ติดต่อสอบถาม</a>
     
 </body>
 </html>
