@@ -27,9 +27,16 @@
       
 </head> 
 <body>
+  <h2>โปรแกรมแสดงที่อยู่อาศัยของคุณ</h2>
+  User Name:<div id="div1"></div> <input type="name" id="username"></div>
+    <p><button onclick="saveUsername()" type="button">Save</button>
+    <button onclick="delUsername()" type="button">Delete</button></p>
+    <div id="result"></div>
+
   <p>โปรดกดปุ่มเพื่อทำการระบุตำแหน่งของคุณ.</p>
   <button onclick="getLocation()">ยืนยัน</button>
   <p id="demo">แจ้งการยืนยันเสร็จสิ้น</p>
+
 
   <script>
     var x = document.getElementById("demo");
