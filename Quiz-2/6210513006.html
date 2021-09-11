@@ -24,19 +24,45 @@
         padding: 0;
       }
       </style>
-      
+      <!-- เปิด-ปิด dialog -->
+      <script>
+        function show_dialog() {
+          var showdialog = document.getElementById("myDialog");
+          showdialog.showModal();
+        }
+        function close_dialog() {
+          var closedialog = document.getElementById("myDialog");
+          closedialog.close()
+        }
+      </script>
 </head> 
 <body>
-  <h2>โปรแกรมแสดงที่อยู่อาศัยของคุณ</h2>
-  User Name:<div id="div1"></div> <input type="name" id="username"></div>
+  
+
+  <div align=center>
+    <br><br>
+    <h2>เพจแสดงที่อยู่อาศัยของคุณ</h2>
+    <button type="button" class="btn btn-link" onclick="show_dialog()">วิธีการใช้</button>
+    <br><br>
+    <br><br>ชื่อผู้ใช้ :<div id="div1"></div> <input type="name" id="username"></div>
     <p><button onclick="saveUsername()" type="button">Save</button>
-    <button onclick="delUsername()" type="button">Delete</button></p>
-    <div id="result"></div>
+    <br><br>
+    <button onclick="getLocation()">แสดงที่อยู่</button>
+    <p id="demo">สถานะการยืนยัน</p><br><br>
+    <p id="showname"></p>
+    <div id="mapholder"></div><br>
+    <div id="counter"></div>
+  </div>
 
-  <p>โปรดกดปุ่มเพื่อทำการระบุตำแหน่งของคุณ.</p>
-  <button onclick="getLocation()">ยืนยัน</button>
-  <p id="demo">แจ้งการยืนยันเสร็จสิ้น</p>
 
+  <!-- dialog  -->
+  <dialog id="myDialog">
+    <button type="button" class="btn-close" aria-label="Close" onclick="close_dialog()"></button>
+    <h4>ขั้นตอนการใช้งานโปรแกรม</h4>
+    <p>1. ใส่ชื่อของท่าน</p>
+    <p>2. กดปุ่ม "save" เพื่อบันทึกข้อมูลของคุณ </p>
+    <p>3. กดปุ่ม "แสดงที่อยู่"</p>
+  </dialog>
 
   <script>
     var x = document.getElementById("demo");
