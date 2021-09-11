@@ -14,39 +14,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@300&display=swap" rel="stylesheet">
   
-    <style>
-      #map {
-      height: 100%;
-          }
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      </style>
-      <!-- เปิด-ปิด dialog -->
-      <script>
-        function show_dialog() {
-          var showdialog = document.getElementById("myDialog");
-          showdialog.showModal();
+    <!-- เปิด-ปิด dialog -->
+    <script>
+      function show_dialog() {
+        var showdialog = document.getElementById("myDialog");
+        showdialog.showModal();
         }
-        function close_dialog() {
-          var closedialog = document.getElementById("myDialog");
-          closedialog.close()
+      function close_dialog() {
+        var closedialog = document.getElementById("myDialog");
+        closedialog.close()
         }
-      </script>
-</head> 
-<body>
-  
+    </script>
 
+    <script>
+      function clickCounter() {
+        if(typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+          } else {
+              localStorage.clickcount = 1;
+          }
+          document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+      } else {
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+  }
+  </script>
+
+</head> 
+<body bgcolor="#F0F8FF">
   <div align=center>
     <br><br>
     <h2>เพจแสดงที่อยู่อาศัยของคุณ</h2>
     <button type="button" class="btn btn-link" onclick="show_dialog()">วิธีการใช้</button>
-    <br><br>
     <br><br>ชื่อผู้ใช้ :<div id="div1"></div> <input type="name" id="username"></div>
-    <p><button onclick="saveUsername()" type="button">Save</button>
-    <br><br>
+    <p><button onclick="clickCounter()" type="button">save</button></p>
+    <div id="result"></div>
+    <br>
     <button onclick="getLocation()">แสดงที่อยู่</button>
     <p id="demo">สถานะการยืนยัน</p><br><br>
     <p id="showname"></p>
@@ -54,6 +58,7 @@
     <div id="counter"></div>
   </div>
 
+    
 
   <!-- dialog  -->
   <dialog id="myDialog">
@@ -96,6 +101,7 @@
         }
     }
   </script>
+
     <footer>
       <br>
       <p>&copy; 2021 . All rights reserved.</p></br>
