@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: #f1f1f1;
+      }
+      
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+      
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+      }
+      
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="Prestyle.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi:wght@300&display=swap" rel="stylesheet">
+    <script>
+
+    </script>
+    <title>I like ...I share</title>
+</head>
+<body>
+    <div class="header">
+        
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>กระแสรณรงค์เลิกทานเนื้อสุนัขและแมว มายังไง??</h2>
+          <img src="image/meat1.png" style="height:200px;">
+          <p>สืบเนื่องจากกระแสโลกจากหลายๆประเทศ มีการรับประทานเนื้อสุนัขเป็นอาหารอย่าง ประเทศเวียดนาม มีการฆ่าและค้าขายเนื้อสุนัขและแมว ประเทศจีนมีเทศกาลการรับประทานสุนัข ซึ่งขัดกับอารยธรรมต่อสายตาชาวต่างชาติ 
+            และชาวโลก มองว่าการบริโภคเนื้อสัตว์เลี้ยงอย่างสุนัขและแมว เป็นสิ่งไม่เหมาะสมที่นำสัตว์เลี้ยงมารับประทานเช่นนี้และเสี่ยงต่อโรคต่างๆ ทางประเทศจีนทางองค์กร NGO อย่าง One Green Planet จึงออกมาให้ความรู้ที่ถูกต้องว่าการกินเนื้อสุนัขและแมวนั้นมีใช่ยาโป๊ว อีกทั้งยังมีโอกาสติดโรคอย่างไม่คาดคิดด้วย เพราะสุนัขและแมวที่ถูกฆ่านั้นส่วนใหญ่เป็นสัตว์ที่ถูกทิ้ง ไร้คนดูแล
+             ดังนั้นทางทีมงานจึงออกโฆษณากระตุ้นให้คนจีนหยุดกินเนื้อหมาด้วยสารโฆษณาง่ายๆ แค่เอารูปหมาน่ารักหรือแมวจรจัดมาคู่กับตะเกียบ แล้วใส่ Copy โดนๆ อย่าง เนื้อที่คุณเพิ่งกินไปเมื่อกี๊ เคยเป็นคนที่เฝ้าบ้าน และเป็นพี่เลี้ยงของลูกคุณมาก่อน! โดยมีทั้งเวอร์ชันภาษาจีนและอังกฤษ จัดทำอยู่ในรูปแบบของสื่อต่างๆ อย่าง สื่อนอกบ้าน เช่น ในรถไฟใต้ดิน ป้ายรถเมล์ ลิฟท์ ทั้งหมด 279 ชิ้น ติดทั่วเมืองใหญ่จากปักกิ่งไปยังเสินเจิ้น เพื่อลดความเชื่อที่ผิดในการทานเนื้อสัตว์แปลกๆ 
+            จึงขอเชิญชวนผู้อ่านที่เห็นด้วยกับบทความนี้ร่วมกันส่งเสียงให้กับการรณรงค์การเลิกทานเนื้อสัตว์เลี้ยง เพื่อสุขอนามัยและสัตว์เลี้ยง 
+          </p>
+          <a href="donteat.html" target="_blank">อ่านต่อ</a>
+        </div>
+      </div>   
+        </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>ส่งเสียงของคุณให้กับบทความนี้</h2>
+            <tr>
+                <td>
+                    เห็นด้วย
+                    <input type="checkbox" name="เห็นด้วย" id="" value="เห็นด้วย" />
+                    ไม่เห็นด้วย
+                    <input type="checkbox" name="ไม่เห็นด้วย" id="" value="ไม่เห็นด้วย" />
+                    <br />
+                </td>
+            </tr>
+
+            <!----- Submit and Reset ------------------------------------------------->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Submit" onclick="validate_all()">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+              
+            </div>
+        </div> 
+
+    </div>
+        <div class="footer">
+        <br>
+        <p>&copy; 2021 . All rights reserved.</p></br>
+        </div>
+    
+    <!-- Page content -->
+    <div class="content">
+        
+    </div>
+</body>
+</html>
